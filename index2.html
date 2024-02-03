@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Subjects</title>
+</head>
+<body>
+
+    <h1>Subjects Information</h1>
+
+    <div class="box">
+        <div class="profile">
+          <p><strong>Subject:</strong> <span id="subject1"></span></p>
+          <p><strong>Teacher:</strong> <span id="teacher1"></span></p>
+        </div>
+
+        <div class="profile">
+          <p><strong>Subject:</strong> <span id="subject2"></span></p>
+          <p><strong>Teacher:</strong> <span id="teacher2"></span></p>
+        </div>
+    </div>  
+
+    <div class="container">
+        <a href="index.html" class="previous round">&#8249;</a>
+        <a href="index2.html" class="next round">&#8250;</a>
+    </div>
+
+  <script>
+    var subjects = {
+      subject1: {
+        name: "Integrative Programming",
+        teacher: "Ms. Shaira Lee H. Pepano"
+      },
+      subject2: {
+        name: "2D Animation",
+        teacher: "Mr. Jay O. Benaraba"
+      }
+    };
+
+    document.getElementById("subject1").innerHTML = subjects.subject1.name;
+    document.getElementById("teacher1").innerHTML = subjects.subject1.teacher;
+    document.getElementById("subject2").innerHTML = subjects.subject2.name;
+    document.getElementById("teacher2").innerHTML = subjects.subject2.teacher;
+  </script>
+</body>
+</html>
